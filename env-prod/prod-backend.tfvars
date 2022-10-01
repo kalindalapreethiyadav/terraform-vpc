@@ -1,3 +1,3 @@
     bucket = "preethi-rf-remote-state-bucket"
-    key    = "vpc/dev/terraform.tfstate"
+    key    = "vpc/prod/terraform.tfstate"
     region = "us-east-1"
