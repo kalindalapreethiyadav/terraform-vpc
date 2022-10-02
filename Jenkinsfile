@@ -13,9 +13,9 @@ pipeline {
             sh "terraform plan -var-file=env-${ENV}/${ENV}.tfvars"
         }
         }
-        stage ('terraform apply') {
+        stage ('terraform destroy') {
         steps {
-        sh "terraform apply -var-file=env-${ENV}/${ENV}.tfvars -auto-approve"
+        sh "terraform destroy -var-file=env-${ENV}/${ENV}.tfvars -auto-approve"
              }
          }
          
